@@ -1,0 +1,221 @@
+book<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books - Online Bookstore</title>
+  <style>
+    /* CSS styles */
+    /* Styles for header and footer */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      background-image: url('image1.jpg'); /* Default background image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      transition: background-image 2s ease-in-out; /* Transition effect */
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+      color: #fff;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      position: relative; /* Add position relative */
+      z-index: 2; /* Ensure header stays on top of the background image */
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li:last-child {
+      margin-right: 0;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav ul li a.active {
+      font-weight: bold;
+    }
+
+    .sub-nav {
+      margin-left: auto;
+    }
+
+    .sub-nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .sub-nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    .sub-nav ul li:last-child {
+      margin-right: 0;
+    }
+
+    .sub-nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      position: relative; /* Add position relative */
+      z-index: 2; /* Ensure footer stays on top of the background image */
+    }
+
+    /* Styles for books section */
+    <style>
+  /* Existing CSS styles */
+
+  .books .book-item img {
+    max-width: 30%; /* Ensure the image doesn't exceed its parent's width */
+    max-height: 50px; /* Limit the maximum height of the image */
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  /* Additional styles for other elements if needed */
+
+    .books {
+      padding: 50px 0;
+    }
+
+    .books .book-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .books .book-item {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .books .book-item img {
+      width: 50%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .books .book-item h3 {
+      margin: 0;
+    }
+
+    .books .book-item p {
+      margin: 5px 0;
+    }
+
+    .books .book-item a {
+      display: block;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .books .book-item a:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Online Bookstore</h1>
+      <div class="sub-nav">
+        <!-- Add sub-navigation links here -->
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./home1.html">Home</a></li>
+          <li><a href="#" class="active">Books</a></li>
+          <li><a href="./authors.html">Authors</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./Welcoming.html">Log Out</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="books">
+    <div class="container">
+      <h2>Books</h2>
+      <div class="book-list">
+        <!-- Book items will be dynamically generated here -->
+        <!-- Example book item -->
+        <div class="book-item">
+          <img src="book1.jpg" alt="Book Title">
+          <h3>Book Title</h3>
+          <p>Author: Author Name</p>
+          <p>Genre: Genre</p>
+          <p>Price: $XX.XX</p>
+          <a href="bookview.php">View Details</a>
+          <a href="book1_download_link.pdf" download>Download</a> <!-- Added  download button -->
+        </div>
+        <!-- Repeat the above structure for each book -->
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Online Bookstore. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+  // JavaScript for background image slideshow
+  var images = ['image1.jpg', 'image2.jpg', 'image3.jpg','image4.jpg']; // Add more image URLs as needed
+  var currentIndex = 0;
+
+  function changeBackground() {
+    document.body.style.backgroundImage = 'url(' + images[currentIndex] + ')';
+    currentIndex = (currentIndex + 1) % images.length;
+    setTimeout(changeBackground, 5000); // Change image every 5 seconds
+  }
+
+  changeBackground(); // Start the slideshow
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!-- admin_login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: skyblue;
+      background-image: url('pic1.jpg'); /* Background image URL */
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 50px;
+      margin: 50px auto;
+      background-color: skyblue;
+      padding: 4px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 4px;
+    }
+
+    form {
+      display: table-row-group;
+      flex-direction: column;
+    }
+
+    
+    .back-btn {
+      display: block;
+      background-color: skyblue;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .back-btn:hover {
+      background-color: skyblue;
+    }
+  </style>
+</head>
+<body>
+    <center>
+    <h2>Admin Login</h2>
+    <form action="admin.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">Login</button>
+    </form>
+    <a href="home1.html">Go to Home</a>
+</center>
+</body>
+</html>

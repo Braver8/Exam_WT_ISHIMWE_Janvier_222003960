@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<style>
+  /* CSS styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url('pic1.jpg'); /* Add the URL of your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Add background color with transparency */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    background-color: green;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card h2 {
+    margin-top: 0;
+  }
+
+  .card p {
+    margin-top: 5px;
+  }
+
+  .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .btn:hover {
+    background-color: #0056b3;
+  }
+
+  .logout-btn {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .logout-btn:hover {
+    background-color: #cc3700;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Welcome to Admin Dashboard</h1>
+  <div class="card">
+    <h2>Manage Users</h2>
+    <p>Here you can add, edit, or delete user accounts.</p>
+    <a href="./userview.php" class="btn">Manage Users</a>
+  </div>
+  <div class="card">
+    <h2>Manage Books</h2>
+    <p>Here you can add, edit, or delete books.</p>
+    <a href="./bookview.php" class="btn">Manage Books</a>
+  </div>
+  <div class="card">
+    <h2>Analytics</h2>
+    <p>View website statistics and user activity.</p>
+    <a href="analytics.php" class="btn">View Analytics</a>
+  </div>
+  <div class="card">
+    <h2>Settings</h2>
+    <p>Update website configurations and admin preferences.</p>
+    <a href="settings.html" class="btn">Go to Settings</a>
+  </div>
+  <div class="card">
+    <h2>Manage Messages/Comments/Requests</h2>
+    <p>Here you can manage messages, comments, or requests passed through the system.</p>
+    <a href="message.html" class="btn">Manage</a>
+  </div> 
+  <div class="card">
+    <h2>Manage customer</h2>
+    <p>Here you can manage customer passed through the system.</p>
+    <a href="./customerview.php" class="btn">Manage</a>
+  </div> 
+  <a href="home1.html" class="btn">Back to Home</a>
+  <a href="admin.html" class="logout-btn">Logout</a>
+</div>
+</body>
+</html>
